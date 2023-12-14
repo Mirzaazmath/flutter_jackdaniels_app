@@ -11,7 +11,7 @@ class SplashScreen extends StatelessWidget {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration:const  BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/bg.jpeg"),fit: BoxFit.fill
           )
@@ -22,11 +22,11 @@ class SplashScreen extends StatelessWidget {
             Expanded(
               flex: 1,
                 child: Container()),
-           const  Text("OLD NO.7",style: TextStyle(fontSize: 50,color: Colors.white,fontWeight: FontWeight.w700,shadows: [
+           const  Text("OLD NO.7",style: TextStyle(fontFamily: "Kalnia",fontSize: 50,color: Colors.white,fontWeight: FontWeight.w700,shadows: [
               BoxShadow(
                 color: Colors.white,
-                offset: Offset(10, 10),
-                blurRadius:50
+                offset: Offset(4, 4),
+                blurRadius:30
               ),
               BoxShadow(
                   color: Colors.white,
@@ -38,7 +38,9 @@ class SplashScreen extends StatelessWidget {
           const   SizedBox(height: 20,),
            const  Text("Whiskey Filtration \n Takes Place Through\n Charcoal",
 
-              style: TextStyle(fontSize: 30,color: Colors.white,fontWeight: FontWeight.normal,shadows: [
+              style: TextStyle(
+                fontFamily: "Kalnia",
+                  fontSize: 30,color: Colors.white,fontWeight: FontWeight.normal,shadows: [
               BoxShadow(
                   color: Colors.white,
                   offset: Offset(10, 10),
@@ -85,7 +87,7 @@ class SplashScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text("Open the bottle",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight: FontWeight.w700,
+                          Text("Open the bottle",style: TextStyle( fontFamily: "Kalnia",fontSize: 20,color: Colors.white,fontWeight: FontWeight.w700,
 
                           )),
                           Text(">>",style: TextStyle(fontSize: 15,color: Colors.white,fontWeight: FontWeight.w700,shadows: [
